@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color:white
+}
+h2{
+    color: white;
+    animation-name: left-to-right;
+    animation-duration: 2s;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: red;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(38, 38, 128);
+    padding: 20px 150px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.404);
+}
+
+nav{
+    display: flex;
+    gap: 60px;
+}
+@keyframes leff-to-right{
+    0%{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: 5px turquoise solid;
+    border-top: 5px rgb(189, 21, 71) dashed;
+    border-radius: 10px;
+    border-top-right-radius: 60px;
+    margin: 40px 20px;
+    padding: 20px 10px;
+    text-align: center;
+    animation-name: left-to-right;
+    animation-duration: 2s;
+}
+.caja:hover{
+    transition: 1s ease-in;
+    background-color: rgb(227, 8, 235);
+}
+/* opacity img de bca se ilumina o filter: brignes img oscura se ilumina */
+.auto{
+    /* opacity: 0.8; */
+    filter: brightness(0.5);
+}
+.auto:hover{
+   /*  opacity: 1; */
+   filter: brightness(1);
+}
